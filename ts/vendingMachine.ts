@@ -1,8 +1,3 @@
-//  import { Quarter } from "./coin";
-// /// <reference path="./coins.ts" />
-// /// <reference path="./products.ts" />
-// /// <reference path="./ProductFactory.ts" />
-
 import * as Coins from "./coins";
 import { Product, InitialProduct as Init } from "./products";
 import getVendingProduct from "./ProductFactory";
