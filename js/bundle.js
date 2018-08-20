@@ -11627,6 +11627,7 @@ var _vendingMachine = __webpack_require__(/*! ./vendingMachine */ "./ts/vendingM
 var machine = new _vendingMachine.VendingMachine();
 machine.size = _vendingMachine.VendingMachineSize.medium;
 ko.applyBindings(machine);
+console.log("true");
 
 /***/ }),
 
@@ -12024,11 +12025,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
-var VendingMachineSize = exports.VendingMachineSize = undefined; //  import { Quarter } from "./coin";
-// /// <reference path="./coins.ts" />
-// /// <reference path="./products.ts" />
-// /// <reference path="./ProductFactory.ts" />
-
+var VendingMachineSize = exports.VendingMachineSize = undefined;
 (function (VendingMachineSize) {
     VendingMachineSize[VendingMachineSize["small"] = 6] = "small";
     VendingMachineSize[VendingMachineSize["medium"] = 9] = "medium";
