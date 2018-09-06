@@ -1,6 +1,8 @@
 import { VendingMachine, VendingMachineSize } from "./vendingMachine";
 
-var machine = new VendingMachine();
+var machine: VendingMachine = new VendingMachine();
 machine.size = VendingMachineSize.medium;
 ko.applyBindings(machine);
-console.log("true");
+$(function(): void {
+    console.log("jquery working!!");
+});

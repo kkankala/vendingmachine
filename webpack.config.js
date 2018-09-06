@@ -8,8 +8,6 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "js"),
         filename: "bundle.js"
-        // library: 'dcseIapecs'
-        // publicPath: "/dist"
     },
     module: {
         rules: [
@@ -27,11 +25,28 @@ module.exports = {
                     {
                         loader: "ts-loader"
                     }
-                ]                
+                ]
             }
+            // {
+            //     //this is nodejs resolve to check node_modules and provide knockout as ko
+            //     test: require.resolve("knockout"),
+            //     use: [
+            //         {
+            //             loader: "expose-loader",
+            //             options: "ko"
+            //         }
+            //     ]
+            // }
         ]
     },
     resolve: {
         extensions: [".tsx", ".ts", ".js"]
-    }
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            ko: "knockout"
+        })
+    ]
 };
